@@ -8,18 +8,266 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <Style>
+    
+	h2{
+  text-align:center;
+  padding: 20px;
+}
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+     touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+</Style>
 </head>
-<body>
+<body style="background: white">
+
 	<div class="header">
-		<div class="top-header">
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="header-menu">
-					<div class="col-lg-1">
-						<div style="width: 130px;">
-							<img style="width: 100%" src="img/Group1.png">
+			<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="row header-text-top">
+							<div class="col-md-6 col-sm-6 col-6">
+								<div style="font-size: 13px; padding-top: 10%;" class="text-center">
+									đơn vị tổ chức
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-6">
+								<div style="font-size: 13px; padding-top: 10%;" class="text-center">
+									đơn vị tổ chức
+								</div>
+							</div>
 						</div>
+					</div>
+					<div class="col-lg-9">
+						<div class="header-langauge">
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
+									<img src="img/vietnam.jpg" class="img-fluid">
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<li class="dropdown-item">
+										<a href="#">
+											VN
+											<img src="img/vietnam.jpg" class="img-fluid">
+										</a>
+									</li>
+									<li class="dropdown-item">
+										<a href="#">
+											VN
+											<img src="img/vietnam.jpg" class="img-fluid">
+										</a>
+									</li>
+									<li class="dropdown-item">
+										<a href="#">
+											VN
+											<img src="img/vietnam.jpg" class="img-fluid">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div class="header-center">
+			<button id="open-menu">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</button>
+			<button id="open-search-form">
+				<i class="fa fa-search" aria-hidden="true"></i>
+			</button>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="row header-center-image">
+							<div class="col-md-6 col-sm-6 col-6 text-center">
+								<img src="img/group.png">
+							</div>
+							<div class="col-md-6 col-sm-6 col-6 text-center">
+								<img src="img/logo_vgs 1.png">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9">
+						<form id="search-form-mobile">
+							<input type="text" name="" placeholder="Enter keywords">
+							<button type="submit">
+								<i class="fa fa-search"></i>
+							</button>
+						</form>
+						<nav class="main-nav">
+							<span id="remove-menu">
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</span>
+							<ul>
+								<li>
+									<a href="#" class="smooth" title="">trang chủ</a>
+								</li>
+								<li>
+									<a href="#" class="smooth" title="">trang chủ</a>
+								</li>
+								<li>
+									<a href="#" class="smooth" title="">trang chủ</a>
+								</li>
+								<li>
+									<a href="#" class="smooth" title="">trang chủ</a>
+								</li>
+								<li>
+									<a href="#" class="smooth" title="">trang con</a>
+									<ul>
+										<li>
+											<a href="#" class="smooth" title="">trang chủ</a>
+										</li>
+										<li>
+											<a href="#" class="smooth" title="">trang chủ</a>
+										</li>
+										<li>
+											<a href="#" class="smooth" title="">trang chủ</a>
+										</li>
+										<li>
+											<a href="#" class="smooth" title="">trang chủ</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="smooth" title="">trang chủ</a>
+								</li>
+								<li>
+									<a href="#" class="smooth" title="">trang chủ</a>
+								</li>
+								<li>
+									<button id="search-form-btn" type="button">
+										<i class="fa fa-search"></i>
+									</button>
+									<form class="search-form-header">
+										<input type="text" name="" placeholder="Enter keywords">
+										<button type="submit">
+											<i class="fa fa-search"></i>
+										</button>
+									</form>
+								</li>
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</div>
@@ -35,12 +283,277 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3">
-						<h6>TRUY VAN</h6>
-						<p>Thông tin cá nhân của giải</p>
+						<p><b>Truy van</b></p>
+						<p>Thong tin ca nhan tai giai</p>
+					</div>
+					<div class="col-lg-6">
+						<form class="form-dki">
+					   		<div class="row">
+					     	 	<input style="width: 223px" type="text" placeholder="Nhập số điện thoại đã đăng kí">
+							    	<select style="width: 223px; height: 30px;">
+									      <option>Chon giai dau</option>
+									      <option>3</option>
+									      <option>4</option>
+									      <option>5</option>
+		    						</select>
+							    <button>Tìm kiếm</button>
+					   		</div>
+						</form>
+					</div>
+					<div class="col-lg-3">
+						<div style="float: right;" class="hotline-info">
+							<p><b> Hotline</b></p>
+							<p>  0984.888.666  Ms. Phượng Anh</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div style="background: #EBEBEB; margin-bottom: 40px;" class="lich-thi-dau">
+		<div class="container">
+			<div style="text-align: center;" class="row">
+				<h2>Lịch thi đấu 2019</h2>
+				<a href="#">Xem cả mùa giải 20 ngày thi đấu chỉ với 2.000.000 VND. Vé chỉ bán tới hết 31/2/2020.</a>
+				<div class="lich-chi-tiet">
+				</div>
+				 <ul style="background:  #004251;" class="nav nav-tabs">
+				    <li><a data-toggle="tab">Home</a></li>
+				    <li><a data-toggle="tab" href="#menu1">VCC</a></li>
+				    <li><a data-toggle="tab" href="#menu2">VSC</a></li>
+				    <li><a data-toggle="tab" href="#menu3">VAO</a></li>
+				    <li><a data-toggle="tab" href="#menu3">VLAO</a></li>
+				    <li><a data-toggle="tab" href="#menu3">VJO</a></li>
+				    <li><a data-toggle="tab" href="#menu3">VMC</a></li>
+  				</ul>
+				  <div class="tab-content">
+				    <div id="home" class="tab-pane fade in active">
+				     <div class="row">
+			     		<div class="col-lg-9">
+			     			<div class="row">
+			     				<div class="col-lg-3">
+			     					<img src="img/group2.png">
+			     				</div>
+			     				<div class="col-lg-6">
+			     					<p style="font-size: 20px; text-transform: uppercase;">vô địch golf các clb việt nam</p>
+										<div class="col-lg-12 col-md-3 col-xs-6 col-xs-12"><p><i class="fa fa-calendar "></i> 15/03/2020</p></div>
+										<div class="col-lg-12 col-md-3 col-xs-6 col-xs-12"><p><i class="fa fa-map-marker"></i> Sân FLC Thanh Hóa</p></div>
+										<div class="col-lg-12 col-md-3 col-xs-6 col-xs-12"><p><i class="fa fa-file-pdf-o"></i> <a href="#">Điều lệ giải</a></p></div>
+										<div class="col-lg-12 col-md-3 col-xs-6 col-xs-12"><p><i class="fa fa-history"></i> <a href="#">Lịch sử giải đấu</a></p></div>
+			     				</div>
+			     			</div>
+			     		</div>
+     				</div>
+				    </div>
+				    <div id="menu1" class="tab-pane fade">
+				     <div class="row">
+			     		<div class="col-lg-9">
+			     			<div class="row">
+			     				<div class="col-lg-3">
+			     					<img src="img/group2.png">
+			     				</div>
+			     				<div class="col-lg-6">
+			     					<p style="font-size: 20px; text-transform: uppercase;">vô địch golf các clb việt nam</p>
+										<div class="col-lg-12 col-md-3 col-xs-6 col-xs-12"><p><i class="fa fa-calendar "></i> 15/03/2020</p></div>
+										<div class="col-lg-12 col-md-3 col-xs-6 col-xs-12"><p><i class="fa fa-map-marker"></i> Sân FLC Thanh Hóa</p></div>
+										<div class="col-lg-12 col-md-3 col-xs-6 col-xs-12"><p><i class="fa fa-file-pdf-o"></i> <a href="#">Điều lệ giải</a></p></div>
+										<div class="col-lg-12 col-md-3 col-xs-6 col-xs-12"><p><i class="fa fa-history"></i> <a href="#">Lịch sử giải đấu</a></p></div>
+			     				</div>
+			     			</div>
+			     		</div>
+     				</div>
+				    </div>
+				    <div id="menu2" class="tab-pane fade">
+				      <div class="row">
+			     		<div class="col-lg-9">
+			     			<div class="row">
+			     				<div class="col-lg-3">
+			     					<img src="img/group2.png">
+			     				</div>
+			     				<div class="col-lg-6">
+			     					<p style="font-size: 20px; text-transform: uppercase;">vô địch golf các clb việt nam</p>
+										<div class="col-lg-12 col-md-3 col-xs-6 col-xs-12"><p><i class="fa fa-calendar "></i> 15/03/2020</p></div>
+										<div class="col-lg-12 col-md-3 col-xs-6 col-xs-12"><p><i class="fa fa-map-marker"></i> Sân FLC Thanh Hóa</p></div>
+										<div class="col-lg-12 col-md-3 col-xs-6 col-xs-12"><p><i class="fa fa-file-pdf-o"></i> <a href="#">Điều lệ giải</a></p></div>
+										<div class="col-lg-12 col-md-3 col-xs-6 col-xs-12"><p><i class="fa fa-history"></i> <a href="#">Lịch sử giải đấu</a></p></div>
+			     				</div>
+			     			</div>
+			     		</div>
+     				</div>
+				    </div>
+				    <div id="menu3" class="tab-pane fade">
+				     <div class="row">
+			     		<div class="col-lg-9">
+			     			<div class="row">
+			     				<div class="col-lg-3">
+			     					<img src="img/group2.png">
+			     				</div>
+			     				<div class="col-lg-6">
+			     					<p style="font-size: 20px; text-transform: uppercase;">vô địch golf các clb việt nam</p>
+										<div class="col-lg-12 col-md-3 col-xs-6 col-xs-12"><p><i class="fa fa-calendar "></i> 15/03/2020</p></div>
+										<div class="col-lg-12 col-md-3 col-xs-6 col-xs-12"><p><i class="fa fa-map-marker"></i> Sân FLC Thanh Hóa</p></div>
+										<div class="col-lg-12 col-md-3 col-xs-6 col-xs-12"><p><i class="fa fa-file-pdf-o"></i> <a href="#">Điều lệ giải</a></p></div>
+										<div class="col-lg-12 col-md-3 col-xs-6 col-xs-12"><p><i class="fa fa-history"></i> <a href="#">Lịch sử giải đấu</a></p></div>
+			     				</div>
+			     			</div>
+			     		</div>
+     				</div>
+				    </div>
+				  </div>
+			</div>
+		</div>
+	</div>
+			<div class="container">
+				<div class="row">
+						<div class="col-lg-12 col-xs-12">
+							<div style="margin-bottom: 20px;" class="qc"></div>
+						</div>
+						<div class="col-lg-12 col-xs-12">
+							<h2 style="text-align: center; text-transform: uppercase; padding: 0px;">Tin giải đấu</h2>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+							<div class="post-main">
+								<img src="img/video.png">
+								<p><b> Những hình ảnh đầu tiên tại vòng mở màn Honda Classic 2019</b></p>
+								<p style="font-size: 14px;">1 ngày trước</p>
+								<p>Đội tuyển WAGC Việt Nam chia sẻ cảm xúc khi giành vô địch Vòng Chung kết WAGC thế giới 2018</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+							<div class="post-main">
+								<img src="img/video.png">
+								<p><b> Những hình ảnh đầu tiên tại vòng mở màn Honda Classic 2019</b></p>
+								<p style="font-size: 14px;">1 ngày trước</p>
+								<p>Đội tuyển WAGC Việt Nam chia sẻ cảm xúc khi giành vô địch Vòng Chung kết WAGC thế giới 2018</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+							<div class="post-main">
+								<img src="img/video.png">
+								<p><b> Những hình ảnh đầu tiên tại vòng mở màn Honda Classic 2019</b></p>
+								<p style="font-size: 14px;">1 ngày trước</p>
+								<p>Đội tuyển WAGC Việt Nam chia sẻ cảm xúc khi giành vô địch Vòng Chung kết WAGC thế giới 2018</p>
+							</div>
+						</div>
+						<div style="text-align: center;" class="col-lg-12 col-xs-12">
+							<button class="btn-all">Xem thêm</button>
+						</div>
+						<div class="col-lg-12 col-xs-12">
+							<div style="margin-bottom: 50px;" class="qc"></div>
+						</div>
+				</div>
+			</div>
+<div style="background:  #2F2F2F;" class="all-video-home">
+			<div style="background: #2F2F2F;" class="container">
+				<div class="row">
+						<div class="col-lg-12">
+							<p style="text-align: center; text-transform: uppercase;font-size:32px;margin-top: 30px;">Video giải đấu</p>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+							<div class="post-main">
+								<img src="img/video.png">
+								<p><b> Những hình ảnh đầu tiên tại vòng mở màn Honda Classic 2019</b></p>
+								<p style="font-size: 14px;">1 ngày trước</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+							<div class="post-main">
+								<img src="img/video.png">
+								<p><b> Những hình ảnh đầu tiên tại vòng mở màn Honda Classic 2019</b></p>
+								<p style="font-size: 14px;">1 ngày trước</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+							<div class="post-main">
+								<img src="img/video.png">
+								<p><b> Những hình ảnh đầu tiên tại vòng mở màn Honda Classic 2019</b></p>
+								<p style="font-size: 14px;">1 ngày trước</p>
+							</div>
+						</div>
+						<div style="text-align: center;" class="col-lg-12 col-xs-12">
+							<button class="btn-all">Xem thêm</button>
+						</div>
+				</div>
+			</div>
+</div>
+	<div class="container">
+  <h2></h2>
+   <section class="customer-logos slider">
+    <div style="border:1px solid black;"class="slide">
+      	<img src="img/vietjet.png">
+    </div>
+   	<div style="border:1px solid black;"class="slide">
+      	<img src="img/vietjet.png">
+    </div>
+    <div style="border:1px solid black;"class="slide">
+      	<img src="img/vietjet.png">
+    </div>
+     <div style="border:1px solid black;"class="slide">
+      	<img src="img/vietjet.png">
+    </div>
+     <div style="border:1px solid black;"class="slide">
+      	<img src="img/vietjet.png">
+    </div>
+     <div style="border:1px solid black;"class="slide">
+      	<img src="img/vietjet.png">
+    </div>
+     <div style="border:1px solid black;"class="slide">
+      	<img src="img/vietjet.png">
+    </div>
+   </section>
+</div>
+	<footer>
+		<div class="all-box">
+			<div style="background: none" class="container">
+				<div class="row">
+				<div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+					<div class="logo-footer">
+						<img src="img/logo-footer.png">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12 col-xs-12">
+					<h5 style="font-weight: bold"> Mọi thông tin, đóng góp vui lòng liên hệ:</h5>
+					<p><i class="fa fa-map-marker"></i> VGS Event - Tầng 2, 101 ngách 5, ngõ 92 Nguyễn Khánh Toàn, Cầu Giấy, Hà Nội</p>
+					<p><i class="fa fa-phone"></i> Hotline: 0988888888</p>
+					<p><i class="fa fa-envelope-square"></i> Email: sponsor@vgsholding.com</p>
+				</div>
+				<div class="col-lg-4 col-md-12 col-xs-12 ft">
+					<div class="icon">
+						<p class="icon-footer"><i class="fa fa-facebook fa-2x"></i></p>
+						<p class="icon-footer"><i class="fa fa-youtube fa-2x"></i></p>
+						<p class="icon-footer"><i class="fa fa-google fa-2x"></i></p>
+						<p class="icon-footer"><i class="fa fa-camera fa-2x"></i></p>
+					</div>
+					<p class="Copyright"> Copyright © 2018 by VGSholding</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</footer>
+<script type="text/javascript">
+	$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 </body>
 </html>
