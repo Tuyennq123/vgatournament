@@ -1,10 +1,74 @@
-@import "base";
-@import "var";
+// @import "base";
+// @import "var";
 body
 {
 	background:#EBEBEB;
+	.lich-thi-dau
+	{
+		background: #EBEBEB;
+		margin-bottom: 40px;
+	}
+	.hotline-info
+	{
+		float: right;
+	}
+	///////style menu tab///////
+	.nav-tabs>li
+	{
+		padding: 0 60px;
+	}
+	.tab-content
+	{
+		background:white;
+		padding: 2%;
+		.img-content
+		{
+			// padding-left: 4%; 
+			max-width: 250px;
+			padding: 15px 5px;
+		}
+		.all-ct-button
+		{
+			font-weight: bold;
+			margin-top: 10px;
+			text-align: center;
+			border-left: 2px solid #ccc;
+			.button-chi-tiet
+			{	
+				margin-bottom: 5%;
+				.button-price-ct-1
+				{
+					color: orange;
+				}
+				.button-text
+				{
+					width: 100%;
+					button
+					{	
 
-	
+						height: 49px;
+						border-radius: 20px;
+						border:none;
+						background:#F26F21;
+						color: white;
+						padding: 0px 40px;
+
+					}
+				}
+			}
+		}
+		.chi-tiet
+		{
+
+			padding-top: 10%;
+			font-size: 16px;
+			.fa
+			{
+				padding-right: 2%;
+			}
+		}
+	}
+	//////////////////////////
 	.title-info
 	{
 		padding-left: 1%;
@@ -759,6 +823,7 @@ body
 {
 		color: white;
 		width: 100%;
+		background:  #2F2F2F;
 }
 //////////////////////////
 footer
@@ -839,8 +904,21 @@ footer
 	}
 }
 }
-@media only screen and (max-width: 1024px){
-	
+@media only screen and (max-width: 1199px) and (min-width: 992px){
+	.header .header-infor .form-dki button
+	{
+		margin-left: 35%;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.title-info
+	{
+		text-align: center;
+	}
+	body .nav-tabs > li 
+	{
+		padding: 0 46px;
+	}
 	.tournaments-system
 	{
 		margin: 0px auto;
@@ -860,6 +938,51 @@ footer
 
 }
 @media only screen and (max-width: 991px){
+	/////////style home/////
+	body .nav-tabs > li 
+	{
+		padding: 0 27px;
+	}
+	.cont-all
+	{
+		display: flex;
+		.cont-1
+		{
+			margin-right: 10%;
+		}
+	}
+	body .tab-content .all-ct-button
+	{
+		border: none;
+		display: flex;
+		margin-left: 25%;
+		.button-chi-tiet
+		{
+			margin-left: 3%;
+		}
+	}
+	.all-ct-button
+	{
+		border: none;
+	}
+	.header-infor
+	{
+		.truy-van
+		{
+			text-align: center;
+		}
+		.form-dki
+		{
+			text-align: center;
+		}
+		.hotline-info
+		{
+			text-align: center;
+			margin-top: 3%;
+			float: none;
+		}
+	}
+	//////////////////////
 	/////////////style gt giaidau/////////
 
 	///////////////////////
@@ -897,6 +1020,7 @@ footer
 }
 }
 @media only screen and (max-width: 800px){
+
 
 }
 
@@ -969,6 +1093,24 @@ footer
 }
 
 @media only screen and (max-width: 767px){
+	body .tab-content .all-ct-button
+	{
+		border: none;
+		display: flex;
+		margin-left: 0;
+		.button-chi-tiet
+		{
+			margin-left: 3%;
+		}
+	}
+	///////////style home///////
+	.tab-content
+	{
+		.img-content
+		{
+			padding: 0;
+		}
+	}
 	//////////////style giaidau///////////
 	.ap
 	{
@@ -1066,13 +1208,63 @@ footer
 	/////////////////style video///////////
 
 }
+@media only screen and (max-width: 757px){
+	body .nav-tabs > li
+	{
+		padding: 0 26px;
+	}
+}
+@media only screen and (max-width: 745px){
+	body .nav-tabs > li
+	{
+		padding: 0 3.5%;
+	}
+}
+@media only screen and (max-width: 713px){
+	body .nav-tabs > li
+	{
+		padding: 0 3.3%;
+	}
+}
 @media only screen and (max-width: 699px){
 	.img-vgs
 	{
 		margin: 0px auto;
 	}
 }
+@media only screen and (max-width: 686px){
+	body .nav-tabs > li
+	{
+		padding: 0 3.1%;
+	}
+}
 @media only screen and (max-width: 640px){
+	////////style home/////////
+	.all-box .title-intro 
+	{	
+		p
+		{
+			padding-top: 2%;
+		}
+	}
+	.header-infor
+	{
+		.truy-van
+		{
+			text-align: center;
+		}
+		.form-dki
+		{
+			text-align: center;
+		}
+		.hotline-info
+		{
+			text-align: center;
+			margin-top: 3%;
+			float: none;
+		}
+	}
+	//////////////////////////
 	.tournaments-system-content
 	{
 		width: 100%;
@@ -1146,6 +1338,24 @@ footer
     margin-left: 4%;
 	}
 }
+@media only screen and (max-width: 662px){
+	body .nav-tabs > li
+	{
+		padding: 0 3%;
+	}
+}
+@media only screen and (max-width: 650px){
+	body .nav-tabs > li
+	{
+		padding: 0 2.9%;
+	}
+}
+@media only screen and (max-width: 639px){
+	body .nav-tabs > li
+	{
+		padding: 0 2.7%;
+	}
+}
 @media only screen and (max-width: 499px){
 	.all-box .tournaments .tournaments-system 
 	{
@@ -1172,8 +1382,6 @@ footer
 	{
 		width: 80%;
 	}
-		
-	
 }
 @media only screen and (max-width: 450px){
 	.all-box .tournaments .tournaments-system 
@@ -1185,8 +1393,59 @@ footer
 		padding-right: 1%;
 	}
 
+	//////////style home/////////
+	.header-infor
+	{
+		
+		.form-dki
+		{
+			text-align: center;
+			input
+			{
+				margin-bottom: 5%;
+			}
+		}
+		.form-dki button
+		{
+			margin: 11%;
+			margin-bottom: 1%;
+		}
+	}
+
+
+}
+@media  only screen and (max-width: 360px) {
+	body .nav-tabs > li
+	{
+		padding: 0;
+	}
+					
+	.all-box .am
+	{
+		width: 90%;
+	} 
 }
 @media only screen and (max-width: 340px){
+	/////////style home////////
+	body .nav-tabs > li
+	{
+		padding: 0;
+	}
+.header-infor
+	{
+		
+		.form-dki
+		{
+			text-align: center;
+			input
+			{
+				margin-bottom: 5%;
+			}
+		}
+		
+	}
+
+	//////////////////////////
 	/////////////style giaidau//////////
 	.all-box .tournaments .tournaments-system{
 		height: 300px;
@@ -1210,117 +1469,13 @@ footer
 		
 	
 }
+@media only screen and (max-width: 340px){
+	.all-box .am
+	{
+		width: 95%;
+	} 
+}
 /////////////////////mobile header menu//////
-@media all and (min-width: 1200px){
-	.container {
-		max-width: 1140px;
-	}
-}
-@media all and (max-width: 1199px){
-	html{
-		font-size: calc(14px * 62.5 / 100);
-	}
-	header{
-		.header-center{
-			.main-nav{
-				padding: 2rem 1rem;
-				ul li:not(:last-child){
-					margin-right: 1.8rem;
-				}
-			}
-		}
-	}
-}
-
-@media all and (max-width: 991px){
-	html{
-		font-size: calc(12px * 62.5 / 100);
-	}
-	header{
-		#open-menu, #open-search-form{
-			display: inline-block;
-		}
-		.header-top{
-			.header-langauge{
-				display: none;
-			}
-		}
-		.header-center{
-			.main-nav{
-				position: fixed;
-				top: 0px;
-				left: 0;
-				background-color: #333333;
-				bottom: 0px;
-				width: 280px;
-				padding: 10px;
-				z-index: 999999;
-				overflow-x: hidden;
-				overflow-y: auto;
-				visibility: hidden;
-				-webkit-transform: translate3d(-280px, 0, 0);
-				transform: translate3d(-280px, 0, 0);
-				-webkit-transition: all 0.5s ease-in-out 0s;
-				transition: all 0.5s ease-in-out 0s;
-				border: 1px solid #e6e6e6;
-				&.active{
-					visibility: visible;
-					-webkit-transform: translate3d(0, 0, 0);
-					transform: translate3d(0, 0, 0);
-				}
-				#remove-menu{
-					display: block;
-				}
-				ul{
-					li{
-						display: block;
-						float: none !important;
-						width: auto;
-						background: none;
-						border-top: 1px solid rgba(255, 255, 255, 0.1);
-						position: relative;
-						margin: 0px -1px;
-						&:not(:last-child){
-							margin-right: 0;
-						}
-						&:last-child{
-							display: none;
-						}
-						a{
-							padding: 3px 0px 3px 0px;
-							height: auto;
-							color: #fff;
-							display: inline-block;
-							width: 100%;						
-						}
-						> i{
-							color: #fff;
-							top: 7px;
-							right: 3px;
-						}
-						ul{
-							position: static;
-							width: 100%;
-							li{
-								a{
-									background-color: unset;
-									color: #fff;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-@media all and (max-width: 768px){
-	.col-6{
-		width: 50%;
-	}
-}
-
 
 
 
