@@ -2,7 +2,27 @@
 // @import "var";
 body
 {
+	.lich-box
+	{
+		.col-xs-12
+		{
+			padding:0px;
+		}
+	}
 	background:#EBEBEB;
+	.cont-all
+	{
+		.fa
+		{
+			color:#BDBDBD;
+		}
+	}
+	.img-content
+	{
+		img {
+			max-width: 250px;
+		}
+	}
 	.lich-thi-dau
 	{
 		background: #EBEBEB;
@@ -17,15 +37,11 @@ body
 	{
 		padding: 0 60px;
 	}
-	.tab-content
-	{
-		background:white;
-		padding: 2%;
+
 		.img-content
 		{
 			// padding-left: 4%; 
 			max-width: 250px;
-			padding: 15px 5px;
 		}
 		.all-ct-button
 		{
@@ -33,8 +49,10 @@ body
 			margin-top: 10px;
 			text-align: center;
 			border-left: 2px solid #ccc;
+			padding-left: 4%;
+
 			.button-chi-tiet
-			{	
+			{
 				margin-bottom: 5%;
 				.button-price-ct-1
 				{
@@ -44,14 +62,13 @@ body
 				{
 					width: 100%;
 					button
-					{	
+					{
 
-						height: 49px;
 						border-radius: 20px;
 						border:none;
 						background:#F26F21;
 						color: white;
-						padding: 0px 40px;
+						padding: 4% 10%;
 
 					}
 				}
@@ -67,7 +84,7 @@ body
 				padding-right: 2%;
 			}
 		}
-	}
+
 	//////////////////////////
 	.title-info
 	{
@@ -946,10 +963,7 @@ footer
 	.cont-all
 	{
 		display: flex;
-		.cont-1
-		{
-			margin-right: 10%;
-		}
+
 	}
 	body .tab-content .all-ct-button
 	{
@@ -1093,6 +1107,36 @@ footer
 }
 
 @media only screen and (max-width: 767px){
+	.big
+	{
+		text-align: center !important;
+	}
+	.style-top
+	{
+		border-top: 1px dashed #878787;
+	}
+
+	.cont-all
+	{
+		padding-left: 30%;
+	}
+	.all-ct-button
+	{
+		display: flex;
+		border: none !important;
+		border: none !important;
+		width: 50%;
+		margin: 0px auto;
+		padding-left: 13%;
+		.button-text
+		{
+			margin-right: 60px;
+		}
+	}
+	.img-content
+	{
+		margin: 0px auto;
+	}
 	body .tab-content .all-ct-button
 	{
 		border: none;
@@ -1239,7 +1283,29 @@ footer
 	}
 }
 @media only screen and (max-width: 640px){
+	.all-ct-button
+	{
+		display: flex;
+		border: none !important;
+		.button-text
+		{
+			margin-right: 30px;
+		}
+	}
 	////////style home/////////
+	.div
+	{
+		display: flex;
+		padding-left: 9%;
+	}
+	.img-content
+	{
+		max-width: 200px;
+	}
+	.title-menu-tab
+	{
+		padding-top: 5%;
+	}
 	.all-box .title-intro 
 	{	
 		p
@@ -1349,14 +1415,24 @@ footer
 	{
 		padding: 0 2.9%;
 	}
+
 }
 @media only screen and (max-width: 639px){
 	body .nav-tabs > li
 	{
 		padding: 0 2.7%;
 	}
+
+	.cont-all
+	{
+		padding-left: 25%;
+	}
 }
 @media only screen and (max-width: 499px){
+	.cont-all
+	{
+		padding-left: 20%;
+	}
 	.all-box .tournaments .tournaments-system 
 	{
 		height: 260px;
@@ -1372,7 +1448,28 @@ footer
 		margin: 0px auto;
 	}
 
+@media only screen and (max-width: 480px){
 
+	.big
+	{
+		padding-left: 0;
+	}
+	.cont-all
+	{
+		padding-left: 0;
+	}
+	.all-ct-button
+	{
+		width: 100%;
+		padding-left:17% !important;
+		.button-chi-tiet
+		{
+			margin-right: 12%;
+		}
+	}
+
+
+}
 @media only screen and (max-width: 452px){
 	.all-box .tournaments .tournaments-system 
 	{
@@ -1414,6 +1511,44 @@ footer
 
 
 }
+@media screen and (max-width: 414px) {
+	.all-ct-button
+	{
+		padding-left: 15% !important;
+
+	}
+
+}
+
+@media screen and (max-width: 411px) {
+	.all-ct-button
+	{
+		padding-left: 14% !important;
+
+	}
+
+}
+@media screen and (max-width: 400px){
+	.all-ct-button
+	{
+		padding:0 !important;
+		width: 100%;
+		.button-chi-tiet
+		{
+			margin: 0px auto;
+		}
+	}
+}
+@media  only screen and (max-width: 375px) {
+	.all-ct-button
+	{
+		width: 100%;
+		.button-chi-tiet
+		{
+			margin: 0px auto;
+		}
+	}
+}
 @media  only screen and (max-width: 360px) {
 	body .nav-tabs > li
 	{
@@ -1423,7 +1558,19 @@ footer
 	.all-box .am
 	{
 		width: 90%;
-	} 
+	}
+	.all-ct-button
+	{
+		width: 84%;
+	}
+	.big
+	{
+		padding: 0;
+	}
+	.cont-all
+	{
+		padding:0;
+	}
 }
 @media only screen and (max-width: 340px){
 	/////////style home////////
@@ -1466,14 +1613,32 @@ footer
 	{
 		width: 100%;
 	}
-		
-	
-}
-@media only screen and (max-width: 340px){
+
 	.all-box .am
 	{
 		width: 95%;
-	} 
+	}
+	.all-ct-button
+	{
+		width: 89%;
+		margin-left: 10%;
+		//.button-chi-tiet
+		//{
+		//	margin-right: 9%;
+		//}
+	}
+}
+@media only screen and (max-width: 320px){
+
+	.all-ct-button
+	{
+		width: 100%;
+		margin-left: 0 !important;
+		//.button-chi-tiet
+		//{
+		//	margin-right: 10%;
+		//}
+	}
 }
 /////////////////////mobile header menu//////
 

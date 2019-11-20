@@ -1,4 +1,8 @@
-﻿.tabsMainContainer {
+﻿#superHeroTabs
+{
+    padding:0 10px !important;
+}
+.tabsMainContainer {
     line-height: 15px;
     border-bottom: 1px solid #d8d8d8;
     background: #004251;
@@ -27,6 +31,7 @@
 {
     color: rgba(255, 255, 255, 0.6);
     padding-top: 1.2%;
+    padding-left: 6%;
 }
 .tabListContainer li:hover
 {
@@ -44,6 +49,7 @@
 .toggleTabsCollapsed,
 .toggleTabsExpanded {
     display: inline;
+    padding: 0 10px !important;
 }
 
 .tabNotch {
@@ -58,7 +64,24 @@
 .selectedNotch {
     display: inline;
 }
-
+@media screen and (max-width:1024px){
+    .tabListContainer li
+    {
+        padding-top: 2%;
+    }
+}
+@media screen and (max-width: 699px){
+    .tabListContainer li
+    {
+        padding-left: 5%;
+    }
+}
+@media screen and (max-width: 639px){
+    .tabListContainer li
+    {
+        padding-left: 4%;
+    }
+}
 @media screen and (max-width: 600px) {
     .tabListContainer {
         position: absolute;
@@ -69,7 +92,7 @@
         cursor: pointer;
         list-style-position: inside;
         z-index: 12;
-        background-color: #ffffff;
+        background-color:#004751;
         margin-top: 2%;
     }
 
@@ -105,6 +128,7 @@
         padding-left: 10px;
         outline: none;
         border:1px solid black;
+        font-weight: bold;
     }
 
     .tabDropdownImage {
@@ -112,6 +136,10 @@
         cursor: pointer;
         vertical-align: middle;
         width: 10px;
+        position: absolute;
+        right: 0;
+        margin-top: 6px;
+        margin-right: 15px;
     }
 
     .toggleTabsCollapsed {
@@ -120,6 +148,8 @@
 
     .toggleTabsExpanded {
         display: inline;
+        width: 94%;
+        margin-left: 3%;
     }
 
     .tabNotch {
@@ -140,5 +170,8 @@
 
     .tabListContainer li {
         display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 }

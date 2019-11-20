@@ -4,12 +4,12 @@ var tabSwitcher = {
     // creates Super hero tabs
     createSuperHeroTabs: function () {
         var oSuperHeroTabConfig = new tabConfiguration();
-        oSuperHeroTabConfig.tabName = ["Batman", "Luke", "Hobbit", "Spock", "Hulk", "Jack Sparrow"];
+        oSuperHeroTabConfig.tabName = ["VCC", "VSC", "VAO", "VLAO", "VJO", "VMC"];
         oSuperHeroTabConfig.commonClass = "superHeroTabCollection";
         oSuperHeroTabConfig.tabID = ["Batman_Tab", "Luke_Tab", "Hobbit_Tab", "Spock_Tab", "Hulk_Tab", "JackSparrow_Tab"];
         oSuperHeroTabConfig.tabClickRequestFunction = tabSwitcher.displaySuperHeroSelectedTab;
         oSuperHeroTabConfig.customID = "superHeroTabs";
-        oSuperHeroTabConfig.defaultTab = "Batman"
+        oSuperHeroTabConfig.defaultTab = "VCC"
         createTabs(oSuperHeroTabConfig);
     },
 
