@@ -1,12 +1,12 @@
 body { background: #EBEBEB; font-size: 16px; }
 body .lich-box .col-xs-12 { padding: 0px; }
 body .cont-all .fa { color: #BDBDBD; }
-body .img-content img { max-width: 250px; }
+body .img-content img { max-width: 180px; }
 body .lich-thi-dau { background: #EBEBEB; margin-bottom: 40px; }
 body .hotline-info { float: right; }
 body .nav-tabs > li { padding: 0 60px; }
 body .img-content { max-width: 250px; }
-body .all-ct-button { font-weight: bold; margin-top: 10px; text-align: center; border-left: 2px solid #ccc; padding-left: 4%; }
+body .all-ct-button { font-weight: bold; margin-top: 10px; text-align: center; border-left: 2px solid #ccc; width: 100% !important; }
 body .all-ct-button .button-chi-tiet { margin-bottom: 5%; }
 body .all-ct-button .button-chi-tiet .button-price-ct-1 { color: orange; }
 body .all-ct-button .button-chi-tiet .button-text { width: 100%; }
@@ -195,10 +195,13 @@ footer .Copyright { font-size: 16px; text-align: right; }
   .all-box .content .title-donors p { text-align: justify; }
   .all-box .content .desc-donors { max-width: 560px; }
   .support { display: none; } }
-@media only screen and (max-width: 767px) { .big { text-align: center !important; }
+@media only screen and (max-width: 767px) { .bt1 { margin: 0px auto; }
+  .bt2 { margin: 0px auto; }
+  .big { text-align: center !important; }
   .style-top { border-top: 1px dashed #878787; }
-  .cont-all { padding-left: 30%; }
-  .all-ct-button { display: flex; border: none !important; border: none !important; width: 50%; margin: 0px auto; padding-left: 13%; }
+  .cont-all .cont-1 { margin: 0px auto; }
+  .cont-all .cont-2 { margin: 0px auto; }
+  .all-ct-button { display: flex; border: none !important; border: none !important; width: 50%; margin: 0px auto; }
   .all-ct-button .button-text { margin-right: 60px; }
   .img-content { margin: 0px auto; }
   body .tab-content .all-ct-button { border: none; display: flex; margin-left: 0; }
@@ -254,17 +257,14 @@ footer .Copyright { font-size: 16px; text-align: right; }
   .all-box .am { text-align: left; width: 71%; float: left; margin-left: 4%; } }
 @media only screen and (max-width: 662px) { body .nav-tabs > li { padding: 0 3%; } }
 @media only screen and (max-width: 650px) { body .nav-tabs > li { padding: 0 2.9%; } }
-@media only screen and (max-width: 639px) { body .nav-tabs > li { padding: 0 2.7%; }
-  .cont-all { padding-left: 25%; } }
-@media only screen and (max-width: 499px) { .cont-all { padding-left: 20%; }
-  .all-box .tournaments .tournaments-system { height: 260px; }
+@media only screen and (max-width: 639px) { body .nav-tabs > li { padding: 0 2.7%; } }
+@media only screen and (max-width: 499px) { .all-box .tournaments .tournaments-system { height: 260px; }
   .all-box .am .time-day { width: 100%; } }
 .img-vgs { margin: 0px auto; }
 
 @media only screen and (max-width: 480px) { .big { padding-left: 0; }
   .cont-all { padding-left: 0; }
-  .all-ct-button { width: 100%; padding-left: 17% !important; }
-  .all-ct-button .button-chi-tiet { margin-right: 12%; } }
+  .all-ct-button { width: 100%; } }
 @media only screen and (max-width: 452px) { .all-box .tournaments .tournaments-system { height: 280px; }
   .all-box .am { width: 80%; } }
 @media only screen and (max-width: 450px) { .all-box .tournaments .tournaments-system { height: 320px; }
@@ -272,8 +272,6 @@ footer .Copyright { font-size: 16px; text-align: right; }
   .header-infor .form-dki { text-align: center; }
   .header-infor .form-dki input { margin-bottom: 5%; }
   .header-infor .form-dki button { margin: 11%; margin-bottom: 1%; } }
-@media screen and (max-width: 414px) { .all-ct-button { padding-left: 15% !important; } }
-@media screen and (max-width: 411px) { .all-ct-button { padding-left: 14% !important; } }
 @media screen and (max-width: 400px) { .all-ct-button { padding: 0 !important; width: 100%; }
   .all-ct-button .button-chi-tiet { margin: 0px auto; } }
 @media only screen and (max-width: 375px) { .all-ct-button { width: 100%; }
@@ -291,8 +289,7 @@ footer .Copyright { font-size: 16px; text-align: right; }
   .all-box .tournaments .tournaments-system .tournaments-system-content .main-1 { margin-right: 0; }
   .img-vgs { margin: 0px auto; }
   .tournaments-system-content { width: 100%; }
-  .all-box .am { width: 95%; }
-  .all-ct-button { width: 89%; margin-left: 10%; } }
+  .all-box .am { width: 95%; } }
 @media only screen and (max-width: 320px) { .all-ct-button { width: 100%; margin-left: 0 !important; } }
 
 /*# sourceMappingURL=styles.css.map */
